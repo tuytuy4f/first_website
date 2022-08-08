@@ -2,28 +2,12 @@
 <html>
  
 <head>
-    <title>Getting Clients IP</title>
-    <style>
-    p, h1 {
-        color: black;
-    }
-    </style>
-  
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>     
-      <script>    
-   
-                
-    $.getJSON("https://api.ipify.org?format=json", function(data) {
-         
-        // Setting text of element P with id gfg
-        $("#gfg").html(data.ip);
-    })
-    </script>
-</head> 
-<body>   
-<p id="gfg"></p>   
-</body>
+    <title>What is your ip address</title>    
+</head>
  
+<body>
+<?php  
+echo $_SERVER['REMOTE_ADDR'];  
+?>  
+</body> 
 </html>
